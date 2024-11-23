@@ -5,7 +5,7 @@ Simple CLI file explorer with NodeJs
 ## Install
 
 ```bash
-$ npm install -g @danixl30/cli-file-explorer
+$ npm install -g @danixl30/file-explorer-cli
 ```
 
 ## CLI
