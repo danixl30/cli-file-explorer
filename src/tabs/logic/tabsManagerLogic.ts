@@ -45,6 +45,8 @@ export const tabsManagerLogic = (
 	}
 
 	const removeTab = (index: number) => {
+		if (tabsState.state.value.length === 1)
+			return
 		selectionInTabs.value = selectionInTabs.value.filter(
 			(_e, i) => index !== i,
 		)

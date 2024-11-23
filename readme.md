@@ -14,6 +14,10 @@ $ npm install -g @danixl30/cli-file-explorer
 $ files --help
 ```
 
+## Icons
+
+For icons you must to use [MesloLGM NF]('https://www.nerdfonts.com/#home') in your terminal.
+
 ## Usage
 
 Use ```UP``` and ```DOWN``` key to move the cursor at the directory.
@@ -55,3 +59,5 @@ Use ```SHITF + s``` to add dir that is on cursor to bookmarks.
 Use ```s``` to switch to bookmarks pane.
 
 Use ```a``` to create a directory in current tab.
+
+Use ```d``` in bookmarks pane to remove a bookmark.
