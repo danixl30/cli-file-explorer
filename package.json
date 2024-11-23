@@ -12,6 +12,7 @@
 	"scripts": {
 		"lint": "pnpm biome check --write src/",
 		"build": "tsc",
+		"prepare": "tsc",
 		"start": "tsc && node dist/cli",
 		"dev": "tsc --watch"
 	},
