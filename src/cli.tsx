@@ -1,9 +1,9 @@
 #!/usr/bin/env node
+import { join } from 'node:path'
 import { withFullScreen } from 'fullscreen-ink'
+import meow from 'meow'
 import React from 'react'
-import meow from 'meow';
 import App from './app.js'
-import { join } from 'node:path';
 
 const cli = meow(
 	`
@@ -28,10 +28,13 @@ const cli = meow(
 			},
 		},
 	},
-);
+)
 
 let defaultPath = process.cwd().replaceAll('\\', '/')
 if (cli.flags.path || cli.flags.p)
-	defaultPath = join(process.cwd(), cli.flags.p ?? cli.flags.path ?? '').replaceAll('\\', '/')
+	defaultPath = join(
+		process.cwd(),
+		cli.flags.p ?? cli.flags.path ?? '',
+	).replaceAll('\\', '/')
 
 withFullScreen(<App defaultPath={defaultPath} />).start()

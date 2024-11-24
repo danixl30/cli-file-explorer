@@ -1,6 +1,6 @@
 {
 	"name": "@danixl30/file-explorer-cli",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"license": "MIT",
 	"bin": {
 		"files": "dist/cli.js"

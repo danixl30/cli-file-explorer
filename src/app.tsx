@@ -23,7 +23,9 @@ export default function App(props: {
 						<AlertContextProvider>
 							<ClipboardProvider>
 								<BookmarkPaneContextProvider>
-									<TabsContextProvider defaultPath={props.defaultPath}>
+									<TabsContextProvider
+										defaultPath={props.defaultPath}
+									>
 										<TabsWrapper />
 										<AlertDisplay />
 										<InputCaptureWarpper />
