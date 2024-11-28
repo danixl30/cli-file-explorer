@@ -1,3 +1,4 @@
+import { randomUUID } from 'node:crypto'
 import { Badge } from '@inkjs/ui'
 import { Box, Text } from 'ink'
 import React, { useEffect, useMemo, useState } from 'react'
@@ -69,6 +70,7 @@ export const NodeList = (props: {
 						return (
 							<>
 								<Text
+									key={randomUUID()}
 									backgroundColor={
 										index === e ? 'blue' : undefined
 									}

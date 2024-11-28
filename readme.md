@@ -26,7 +26,7 @@ Use ```CTRL + t``` to create a new tab. If the cursor in on a directory press ``
 
 User ```CRTL + w``` to close current tab.
 
-Use ```TAB``` and ```SHIFT + TAB``` to change tabs.
+Use ```TAB``` and ```SHIFT + z``` to change tabs.
 
 Use ```RIGHT``` to select files or directories. ```SHIFT + RIGHT``` to unselect. ```SHIFT + i``` to invert selection. ```SHIFT + a``` to selcet all.
 

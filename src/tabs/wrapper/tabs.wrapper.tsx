@@ -14,10 +14,10 @@ export default function TabsWrapper() {
 
 	useInput((input, key) => {
 		if (inputCapture.isInputEnabled || textField.isInputEnabled) return
-		if (key.tab && key.shift) tabs.moveToPrev()
-		if (key.tab) tabs.moveToNext()
-		if (input === 't' && key.ctrl) tabs.addTab()
-		if (input === 'w' && key.ctrl) tabs.removeTab(tabs.index.value)
+		if (key.shift && input === 'Z') tabs.moveToPrev()
+		else if (key.tab) tabs.moveToNext()
+		else if (input === 't' && key.ctrl) tabs.addTab()
+		else if (input === 'w' && key.ctrl) tabs.removeTab(tabs.index.value)
 	})
 
 	useEffect(() => {
