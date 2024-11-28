@@ -52,7 +52,7 @@ export const operationsManager = (
 				fileManager.selections.value.length === 0
 					? [node]
 					: fileManager.selections.value,
-			opeation: 'COPY',
+			opeation: 'CUT',
 		})
 	}
 

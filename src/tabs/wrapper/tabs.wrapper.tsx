@@ -14,8 +14,8 @@ export default function TabsWrapper() {
 
 	useInput((input, key) => {
 		if (inputCapture.isInputEnabled || textField.isInputEnabled) return
-		if (key.tab) tabs.moveToNext()
 		if (key.tab && key.shift) tabs.moveToPrev()
+		if (key.tab) tabs.moveToNext()
 		if (input === 't' && key.ctrl) tabs.addTab()
 		if (input === 'w' && key.ctrl) tabs.removeTab(tabs.index.value)
 	})
